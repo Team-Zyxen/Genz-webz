@@ -45,12 +45,6 @@ const Header: React.FC = () => {
             About
           </a>
           <a
-            href="/services"
-            className="text-nav-link text-gray-300 hover:text-white smooth-transition"
-          >
-            Services
-          </a>
-          <a
             href="/contact"
             className="text-nav-link text-gray-300 hover:text-white smooth-transition"
           >
