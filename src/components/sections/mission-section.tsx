@@ -8,8 +8,8 @@ const MissionSection = () => {
           <p className="text-purple-400 text-sm font-semibold uppercase fade-in">
             Our Mission
           </p>
-          <h2 className="fade-in-up text-4xl md:text-5xl font-bold text-white">
-            To build high-performance digital products that deliver speed, reliability, and lasting impact.
+          <h2 className="fade-in-up text-3xl md:text-4xl font-bold text-white">
+            Building high-performance digital products with speed, reliability, and lasting impact
           </h2>
         </div>
       </div>
