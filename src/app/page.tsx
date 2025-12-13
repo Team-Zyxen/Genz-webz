@@ -79,7 +79,7 @@ export default function Home() {
           }}
         >
           <Header />
-          <main>
+          <main className="pt-[60px]">
             <HeroSection />
             <MissionSection />
             <section className="max-w-7xl mx-auto px-6 py-20">
