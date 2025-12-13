@@ -9,7 +9,7 @@ const MissionSection = () => {
             Our Mission
           </p>
           <h2 className="fade-in-up text-4xl md:text-5xl font-bold text-white">
-            Where AI, automation, and precision engineering shape future-ready software.
+            To build high-performance digital products that deliver speed, reliability, and lasting impact.
           </h2>
         </div>
       </div>
