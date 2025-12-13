@@ -22,7 +22,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="text-white font-bold">
-                <span className="text-[1.4rem]">Z</span>YXEN
+                <span className="text-[1.8rem]">Z</span>YXEN
               </span>
             </div>
             <p className="text-sm text-gray-400">
