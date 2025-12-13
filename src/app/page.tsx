@@ -72,7 +72,7 @@ export default function Home() {
       {isLoading && <LoadingAnimation onComplete={handleLoadingComplete} />}
       <SmoothTransitionsProvider>
         <div 
-          className="min-h-screen bg-black text-white antialiased"
+          className="min-h-screen bg-black text-white antialiased overflow-x-hidden"
           style={{
             opacity: showContent ? 1 : 0,
             transition: 'opacity 0.5s ease-in-out'
