@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             className="w-8 h-8 object-contain"
           />
           <span className="text-logo text-white font-bold">
-            <span className="text-[1.4rem]">Z</span>YXEN
+            <span className="text-[1.8rem]">Z</span>YXEN
           </span>
         </a>
 
