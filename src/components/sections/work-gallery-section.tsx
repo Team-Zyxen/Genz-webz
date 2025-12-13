@@ -163,7 +163,7 @@ const WorkGallerySection: React.FC = () => {
 
                     {/* Desktop Video */}
                     <video
-                      ref={(el) => (videoRefs.current[key] = el)}
+                      ref={(el) => { videoRefs.current[key] = el; }}
                       src={project.preview}
                       poster={project.thumbnail}
                       className={`work-gallery-video absolute inset-0 w-full h-full transition-opacity duration-200 ${isPlaying ? "opacity-100" : "opacity-0"}`}
