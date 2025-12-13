@@ -24,9 +24,9 @@ const Footer = () => {
               Intelligent Software Meets Elegant Engineering
             </p>
             <div className="space-y-2 pt-2">
-              <a href="tel:+919876543210" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="tel:+917013558465" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
                 <Phone size={14} />
-                +91 98765 43210
+                +91 70135 58465
               </a>
               <a href="mailto:contact@zyxen.in" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
                 <Mail size={14} />
