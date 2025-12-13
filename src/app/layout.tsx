@@ -29,6 +29,15 @@ export const metadata: Metadata = {
     "web application development",
     "intelligent automation",
     "enterprise software",
+    "digital experiences",
+    "technology",
+    "innovation",
+    "performance",
+    "brand",
+    "engineering",
+    "design precision",
+    "future-ready",
+    "scalable architecture"
   ],
   robots: "index, follow",
   alternates: {
@@ -96,7 +105,7 @@ export default function RootLayout({
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          email: "official@zyxen.in",
+          email: "contact@zyxen.in",
           contactType: "customer service",
         },
       },
@@ -112,7 +121,7 @@ export default function RootLayout({
         "@id": "https://zyxen.in/#localbusiness",
         name: "ZYXEN",
         url: "https://zyxen.in",
-        email: "official@zyxen.in",
+        email: "contact@zyxen.in",
         description:
           "ZYXEN is a digital solutions and creative agency building high-performance websites, branding, and software products.",
         priceRange: "$$",
