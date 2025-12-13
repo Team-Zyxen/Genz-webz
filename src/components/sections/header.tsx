@@ -21,9 +21,9 @@ const Header: React.FC = () => {
           <Image
             src="/previews/logo.png"
             alt="ZYXEN Logo"
-            width={40}
-            height={40}
-            className="w-8 h-8 object-contain"
+            width={48}
+            height={48}
+            className="w-12 h-12 object-contain"
           />
           <span className="text-logo text-white font-bold">
             <span className="text-[1.8rem]">Z</span>YXEN
