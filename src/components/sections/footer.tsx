@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-white flex items-center justify-center rounded">
+              <div className="w-8 h-8 bg-white flex items-center justify-center rounded">
                 <svg
-                  className="w-4 h-4 text-black"
+                  className="w-5 h-5 text-black"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -22,7 +22,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="text-white font-bold">
-                <span className="text-[1.25rem]">Z</span>YXEN
+                <span className="text-[1.4rem]">Z</span>YXEN
               </span>
             </div>
             <p className="text-sm text-gray-400">
@@ -33,9 +33,9 @@ const Footer = () => {
                 <Phone size={14} />
                 +91 98765 43210
               </a>
-              <a href="mailto:official@zyxen.in" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="mailto:contact@zyxen.in" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
                 <Mail size={14} />
-                official@zyxen.in
+                contact@zyxen.in
               </a>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="mailto:official@zyxen.in" className="hover:text-purple-400 transition-colors">
+                <a href="mailto:contact@zyxen.in" className="hover:text-purple-400 transition-colors">
                   Help Center
                 </a>
               </li>
