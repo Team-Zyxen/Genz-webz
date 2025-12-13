@@ -97,20 +97,13 @@ export default function AboutPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
                 variants={staggerContainer}
-                className="text-center space-y-8"
+                className="space-y-8"
               >
-                <motion.span
-                  variants={fadeInUp}
-                  className="inline-block text-sm font-semibold uppercase tracking-[0.15em] text-purple-400"
-                >
-                  Our Story
-                </motion.span>
-                
                 <motion.h2
                   variants={fadeInUp}
-                  className="text-4xl md:text-5xl font-bold"
+                  className="text-4xl md:text-5xl font-bold text-center"
                 >
-                  Why We Started ZYXEN
+                  OUR STORY
                 </motion.h2>
                 
                 <motion.div
@@ -118,8 +111,28 @@ export default function AboutPage() {
                   className="relative"
                 >
                   <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 to-violet-600 rounded-full" />
-                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-left pl-8">
-                    ZYXEN was founded to transform ideas into meaningful digital experiences. We built ZYXEN with a vision to combine creativity, technology, and innovation to deliver work that defines excellence. Our purpose has always been to build digital products that are clean, powerful, and timeless.
+                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed pl-8 text-justify">
+                    ZYXEN was founded with a simple belief — technology should create real impact. We saw a gap between digital products that look good and digital products that truly perform. ZYXEN was built to bridge that gap.
+                  </p>
+                </motion.div>
+                
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative"
+                >
+                  <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 to-violet-600 rounded-full" />
+                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed pl-8 text-justify">
+                    Our journey began with a deep passion for design, engineering, and meaningful innovation. We wanted to build solutions that are fast, purposeful, and crafted with precision. Every project we take on reflects our commitment to quality, clarity, and long-term value.
+                  </p>
+                </motion.div>
+                
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative"
+                >
+                  <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 to-violet-600 rounded-full" />
+                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed pl-8 text-justify">
+                    ZYXEN exists because we believe in building digital experiences that elevate brands, empower businesses, and inspire people. Our story is shaped by continuous learning, dedication, and a vision to push the boundaries of what technology can achieve.
                   </p>
                 </motion.div>
               </motion.div>
@@ -135,17 +148,11 @@ export default function AboutPage() {
                 variants={staggerContainer}
                 className="text-center space-y-4 mb-16"
               >
-                <motion.span
-                  variants={fadeInUp}
-                  className="inline-block text-sm font-semibold uppercase tracking-[0.15em] text-purple-400"
-                >
-                  What Drives Us
-                </motion.span>
                 <motion.h2
                   variants={fadeInUp}
                   className="text-4xl md:text-5xl font-bold"
                 >
-                  Mission, Approach & Values
+                  WHAT DRIVES US
                 </motion.h2>
               </motion.div>
 
@@ -154,7 +161,7 @@ export default function AboutPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-50px" }}
                 variants={staggerContainer}
-                className="grid md:grid-cols-3 gap-8"
+                className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
               >
                 <motion.div
                   variants={scaleIn}
@@ -162,12 +169,9 @@ export default function AboutPage() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
                   <div className="relative z-10 space-y-4">
-                    <div className="w-14 h-14 bg-purple-600/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Rocket className="w-7 h-7 text-purple-400" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">Mission</h3>
+                    <h3 className="text-2xl font-bold text-white">Innovation with Intent</h3>
                     <p className="text-gray-400 leading-relaxed">
-                      Build future-ready digital products that help brands grow and scale with confidence in an evolving digital landscape.
+                      We build digital solutions that solve real problems with clarity and purpose.
                     </p>
                   </div>
                 </motion.div>
@@ -178,12 +182,9 @@ export default function AboutPage() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
                   <div className="relative z-10 space-y-4">
-                    <div className="w-14 h-14 bg-purple-600/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Paintbrush className="w-7 h-7 text-purple-400" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">Approach</h3>
+                    <h3 className="text-2xl font-bold text-white">Technical Excellence</h3>
                     <p className="text-gray-400 leading-relaxed">
-                      Minimal, elegant, smooth, modern design crafted with precision. Every pixel matters in creating exceptional experiences.
+                      Scalable architecture, clean code, and performance-focused engineering.
                     </p>
                   </div>
                 </motion.div>
@@ -194,12 +195,22 @@ export default function AboutPage() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
                   <div className="relative z-10 space-y-4">
-                    <div className="w-14 h-14 bg-purple-600/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Shield className="w-7 h-7 text-purple-400" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">Values</h3>
+                    <h3 className="text-2xl font-bold text-white">Design Precision</h3>
                     <p className="text-gray-400 leading-relaxed">
-                      Transparency, innovation, trust, and long-term partnerships form the foundation of everything we create.
+                      Thoughtful design that blends usability, speed, and brand identity.
+                    </p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  variants={scaleIn}
+                  className="group relative bg-gradient-to-br from-slate-900/80 to-slate-900/40 border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(147,51,234,0.15)]"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                  <div className="relative z-10 space-y-4">
+                    <h3 className="text-2xl font-bold text-white">Relentless Improvement</h3>
+                    <p className="text-gray-400 leading-relaxed">
+                      A mindset of learning, adapting, and delivering future-ready results.
                     </p>
                   </div>
                 </motion.div>
