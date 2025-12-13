@@ -7,11 +7,17 @@ import Script from "next/script";
 export const metadataBase = new URL("https://zyxen.in");
 
 export const metadata: Metadata = {
-  title: "ZYXEN",
+  title: "ZYXEN – Digital Solutions & Creative Agency",
   description:
-    "ZYXEN delivers affordable, elegant and AI-driven software solutions for businesses. We provide modern websites, intelligent automation and custom digital systems designed to help companies grow with smart, efficient technology.",
-
+    "ZYXEN builds high-performance digital products, websites, branding, and solutions with modern design and smooth user experience.",
   keywords: [
+    "Zyxen",
+    "Zyxen Agency",
+    "Zyxen Company",
+    "Creative Agency",
+    "Web Development",
+    "Branding",
+    "Digital Solutions",
     "ZYXEN",
     "software solutions",
     "AI solutions",
@@ -23,19 +29,20 @@ export const metadata: Metadata = {
     "web application development",
     "intelligent automation",
     "enterprise software",
-    "affordable AI services",
   ],
-
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://zyxen.in",
+  },
   icons: {
     icon: "/previews/logo.png",
     shortcut: "/previews/logo.png",
     apple: "/previews/logo.png",
   },
-
   openGraph: {
-    title: "ZYXEN",
+    title: "ZYXEN – Digital Solutions & Creative Agency",
     description:
-      "Affordable, elegant and intelligent AI-powered software solutions for modern businesses.",
+      "We build future-ready digital products with premium design and fast performance.",
     url: "https://zyxen.in",
     siteName: "ZYXEN",
     images: [
@@ -43,31 +50,85 @@ export const metadata: Metadata = {
         url: "/previews/og-image.png",
         width: 1200,
         height: 630,
+        alt: "ZYXEN Digital Agency",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "ZYXEN",
+    title: "ZYXEN – Digital Solutions & Creative Agency",
     description:
-      "Affordable and elegant AI-driven software and website solutions for businesses.",
+      "We build future-ready digital products with premium design and fast performance.",
     images: ["/previews/og-image.png"],
   },
 };
 
-// Optional: set theme color for viewport (if needed)
-// export const viewport: Viewport = { themeColor: "#000000" };
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zyxen.in/#organization",
+        name: "ZYXEN",
+        url: "https://zyxen.in",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://zyxen.in/previews/logo.png",
+        },
+        sameAs: [
+          "https://www.instagram.com/zyxen.in",
+          "https://x.com/zyxen_in",
+          "https://www.linkedin.com/company/zyxen/",
+          "https://www.facebook.com/share/1BGNGdWE92/",
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          email: "official@zyxen.in",
+          contactType: "customer service",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://zyxen.in/#website",
+        url: "https://zyxen.in",
+        name: "ZYXEN",
+        publisher: { "@id": "https://zyxen.in/#organization" },
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://zyxen.in/#localbusiness",
+        name: "ZYXEN",
+        url: "https://zyxen.in",
+        email: "official@zyxen.in",
+        description:
+          "ZYXEN is a digital solutions and creative agency building high-performance websites, branding, and software products.",
+        priceRange: "$$",
+        image: "https://zyxen.in/previews/og-image.png",
+      },
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <Script
           id="orchids-browser-logs"
