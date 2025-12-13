@@ -197,7 +197,6 @@ const WorkGallerySection: React.FC = () => {
                   loop
                   muted
                   playsInline
-                  controls 
                   onClick={(e) => e.stopPropagation()} 
                 />
                 
